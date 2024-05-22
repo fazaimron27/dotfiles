@@ -26,9 +26,16 @@ set -x PATH $PATH $JUPYTER/bin
 
 # alias
 alias pn=pnpm
+alias start_lamp=.script/start_lamp.sh
+alias stop_lamp=.script/stop_lamp.sh
 # alias end
 
 # abbr
 abbr -a docs ~/Documents
 abbr -a down ~/Downloads
+abbr -a sta start_lamp
+abbr -a sto stop_lamp
 # abbr end
+
+# starship init fish | source
+zoxide init fish | source
