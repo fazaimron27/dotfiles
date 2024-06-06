@@ -1,0 +1,189 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.tabSize": 4
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 4
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "beautify.language": {
+    "html": ["html", "php", "blade"]
+  },
+  "breadcrumbs.enabled": false,
+  "discord.removeDetails": true,
+  "discord.removeLowerDetails": true,
+  "discord.removeRemoteRepository": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 5,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.fontWeight": "400",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.letterSpacing": 0,
+  "editor.lineHeight": 24,
+  "editor.linkedEditing": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "italic font",
+        "scope": [
+          "comment",
+          "keyword",
+          "storage",
+          "constant",
+          "emphasis",
+          "markup.italic",
+          "keyword.control",
+          "keyword.control.from",
+          "keyword.control.flow",
+          "keyword.operator.new",
+          "keyword.control.import",
+          "keyword.control.export",
+          "keyword.control.default",
+          "keyword.control.trycatch",
+          "keyword.control.conditional",
+          "storage.type",
+          "storage.type.class",
+          "storage.modifier.tsx",
+          "storage.type.function",
+          "storage.modifier.async",
+          "variable.language",
+          "variable.language.this",
+          "variable.language.super",
+          "constant.language.null",
+          "support.type.primitive",
+          "entity.name.method.js",
+          "entity.other.attribute-name",
+          "punctuation.definition.comment",
+          "text.html.basic entity.other.attribute-name",
+          "tag.decorator.js entity.name.tag.js",
+          "tag.decorator.js punctuation.definition.tag.js",
+          "source.js constant.other.object.key.js string.unquoted.label.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "scope": [
+          "string",
+          "variable.other.object",
+          "variable.other.readwrite",
+          "meta.class",
+          "meta.var.expr",
+          "entity.name.function",
+          "invalid"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "php": "html",
+    "blade": "html",
+    "javascript": "html",
+    "vue": "html"
+  },
+  "extensions.autoUpdate": false,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "txt": true,
+    "yaml": true,
+    "sh": true
+  },
+  "liveServer.settings.NoBrowser": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 4000,
+  "liveshare.autoShareTerminals": true,
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.opacity": 0.5,
+  "notebook.output.textLineLimit": 10000,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.fontSize": 12,
+  "window.menuBarVisibility": "compact",
+  "window.title": "",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0.25,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#282c34",
+    "editorGroupHeader.tabsBackground": "#282c34",
+    "sideBar.background": "#282c34",
+    "tab.activeBackground": "#282c34",
+    "tab.activeBorder": "#d19a66"
+  },
+  "workbench.colorTheme": "One Monokai",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.startupEditor": "none",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "redhat.telemetry.enabled": false
+}
