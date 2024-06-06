@@ -28,6 +28,11 @@ set -x PATH $PATH $JUPYTER/bin
 alias pn=pnpm
 alias start_lamp=.script/start_lamp.sh
 alias stop_lamp=.script/stop_lamp.sh
+alias upref="sudo dnf upgrade --refresh"
+alias dmov="sudo dnf autoremove"
+alias dcpkg="sudo dnf clean packages"
+alias sn="sudo shutdown now"
+alias rn="sudo reboot now"
 # alias end
 
 # abbr
