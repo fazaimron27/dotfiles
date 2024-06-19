@@ -185,5 +185,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.mouseWheelZoom": true
 }
