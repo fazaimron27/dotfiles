@@ -33,6 +33,7 @@ alias dmov="sudo dnf autoremove"
 alias dcpkg="sudo dnf clean packages"
 alias sn="sudo shutdown now"
 alias rn="sudo reboot now"
+alias ff=fastfetch
 # alias end
 
 # abbr
