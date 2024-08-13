@@ -8,7 +8,7 @@
     "editor.tabSize": 4
   },
   "[html]": {
-    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4
   },
   "[javascript]": {
@@ -57,7 +57,7 @@
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorWidth": 5,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Fira Code, '0xProto Nerd Font'",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": "400",
@@ -143,17 +143,19 @@
   "emmet.includeLanguages": {
     "php": "html",
     "blade": "html",
-    "javascript": "html",
-    "vue": "html"
+    "javascript": "html"
+    // "vue": "html"
   },
   "extensions.autoUpdate": false,
   "github.copilot.enable": {
     "*": true,
-    "markdown": true,
     "plaintext": true,
+    "markdown": true,
+    "scminput": false,
     "txt": true,
     "yaml": true,
-    "sh": true
+    "sh": true,
+    "jsonc": true
   },
   "liveServer.settings.NoBrowser": true,
   "liveServer.settings.donotShowInfoMsg": true,
@@ -176,7 +178,6 @@
     "tab.activeBorder": "#d19a66"
   },
   "workbench.colorTheme": "One Monokai",
-  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
@@ -187,5 +188,66 @@
   },
   "redhat.telemetry.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "editor.mouseWheelZoom": true
+  "editor.mouseWheelZoom": true,
+  "go.toolsManagement.autoUpdate": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "_",
+      "color": "#C678DD",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "files.associations": { "*.scss": "postcss" }
 }
