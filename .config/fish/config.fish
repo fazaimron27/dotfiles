@@ -34,6 +34,8 @@ alias dcpkg="sudo dnf clean packages"
 alias sn="sudo shutdown now"
 alias rn="sudo reboot now"
 alias ff=fastfetch
+alias cat=bat
+alias ls=eza
 # alias end
 
 # abbr
@@ -43,5 +45,18 @@ abbr -a sta start_lamp
 abbr -a sto stop_lamp
 # abbr end
 
-# starship init fish | source
+starship init fish | source
+
 zoxide init fish | source
+alias cd=z
+
+set -gx ATUIN_NOBIND "true"
+atuin init fish | source
+
+# bind to ctrl-r in normal and insert mode, add any other bindings you want here too
+bind \cr _atuin_search
+bind -M insert \cr _atuin_search
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
