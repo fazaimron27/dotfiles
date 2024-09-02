@@ -166,7 +166,6 @@
   "notebook.output.textLineLimit": 10000,
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontSize": 12,
-  "window.menuBarVisibility": "compact",
   "window.title": "",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0.25,
@@ -181,6 +180,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
   "github.copilot.editor.enableAutoCompletions": true,
   "prisma.showPrismaDataPlatformNotification": false,
   "[typescriptreact]": {
@@ -249,5 +249,8 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  "files.associations": { "*.scss": "postcss" }
+  "files.associations": {
+    "*.scss": "postcss"
+  },
+  "window.menuBarVisibility": "compact"
 }
