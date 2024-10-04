@@ -10,3 +10,4 @@ fi
 . "$HOME/.atuin/bin/env"
 
 source /home/faza/.config/broot/launcher/bash/br
+. "$HOME/.cargo/env"
