@@ -44,6 +44,13 @@ abbr -a docs ~/Documents
 abbr -a down ~/Downloads
 abbr -a sta start_lamp
 abbr -a sto stop_lamp
+abbr -a gsts git status
+abbr -a gf git fetch
+abbr -a gpl git pull
+abbr -a gcm git commit
+abbr -a gco git checkout
+abbr -a gbr git branch
+abbr -a gcl git clone
 # abbr end
 
 starship init fish | source
