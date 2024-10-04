@@ -5,7 +5,7 @@ end
 set -g fish_greeting
 
 # golang
-set -x GOROOT  /usr/local/go
+set -x GOROOT /usr/local/go
 set -x PATH $PATH $GOROOT/bin
 
 set -x GOPATH $HOME/go
@@ -15,7 +15,7 @@ set -x PATH $PATH $GOPATH/bin
 # pnpm
 set -gx PNPM_HOME "/home/faza/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 
@@ -36,6 +36,7 @@ alias rn="sudo reboot now"
 alias ff=fastfetch
 alias cat=bat
 alias ls=eza
+alias please=sudo
 # alias end
 
 # abbr
@@ -50,7 +51,7 @@ starship init fish | source
 zoxide init fish | source
 alias cd=z
 
-set -gx ATUIN_NOBIND "true"
+set -gx ATUIN_NOBIND true
 atuin init fish | source
 
 # bind to ctrl-r in normal and insert mode, add any other bindings you want here too
@@ -60,3 +61,10 @@ bind -M insert \cr _atuin_search
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+set -x RUBYGEMS /usr/local/share/gems
+set -x PATH $PATH $RUBYGEMS/gems
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+set -x GPG_TTY (tty)
