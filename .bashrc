@@ -34,3 +34,6 @@ export PATH=$PATH:/usr/local/go/bin
 eval "$(atuin init bash)"
 
 source /home/faza/.config/broot/launcher/bash/br
+. "$HOME/.cargo/env"
+
+export GPG_TTY=$(tty)
