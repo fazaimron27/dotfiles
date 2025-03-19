@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export GVM_ROOT:/home/faza/\x2egvm\x1e/home/faza/\x2egvm\x1e/home/faza/\x2egvm\x1e/home/faza/\x2egvm\x1e/home/faza/\x2egvm\x1e/home/faza/\x2egvm\x1e/home/faza/\x2egvm/bin
+SETUVAR --export HELIX_RUNTIME:/usr/lib64/helix/runtime
 SETUVAR --export --path PATH:/home/faza/\x2egvm/gos/go1\x2e24\x2e1/bin\x1e/home/faza/\x2ebun/bin\x1e/home/faza/\x2egvm/pkgsets/go1\x2e24\x2e1/global/bin\x1e/home/faza/\x2egvm/gos/go1\x2e24\x2e1/bin\x1e/home/faza/\x2egvm/pkgsets/go1\x2e24\x2e1/global/overlay/bin\x1e/home/faza/\x2egvm/bin\x1e/run/user/1000/fnm_multishells/45297_1741625193326/bin\x1e/home/faza/\x2elocal/share/fnm\x1e/home/faza/\x2egvm/pkgsets/go1\x2e24\x2e1/global/bin\x1e/home/faza/\x2egvm/gos/go1\x2e24\x2e1/bin\x1e/home/faza/\x2egvm/pkgsets/go1\x2e24\x2e1/global/overlay/bin\x1e/home/faza/\x2egvm/bin\x1e/home/faza/\x2ebun/bin\x1e/run/user/1000/fnm_multishells/38542_1741624632535/bin\x1e/home/faza/\x2elocal/share/fnm\x1e/run/user/1000/fnm_multishells/6176_1741594531928/bin\x1e/home/faza/\x2elocal/share/pnpm\x1e/home/faza/\x2ecargo/bin\x1e/run/user/1000/fnm_multishells/2154_1741594271024/bin\x1e/home/faza/\x2eatuin/bin\x1e/usr/local/bin\x1e/usr/local/sbin\x1e/usr/bin\x1e/usr/sbin\x1e/var/lib/snapd/snap/bin\x1e/home/faza/bin\x1e/home/faza/bin
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:true
 SETUVAR ZO_CMD:jo
@@ -12,10 +13,12 @@ SETUVAR __fish_initialized:3400
 SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jgantunes_2F_fish_2D_gvm_files:\x7e/\x2econfig/fish/functions/gvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/gvm\x2efish
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1epatrickf1/fzf\x2efish\x1ejethrokuan/z\x1ejgantunes/fish\x2dgvm\x1eedc/bass
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1epatrickf1/fzf\x2efish\x1ejethrokuan/z\x1ejgantunes/fish\x2dgvm\x1eedc/bass\x1ejorgebucaran/autopair\x2efish\x1ewfxr/forgit
 SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2efish
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
