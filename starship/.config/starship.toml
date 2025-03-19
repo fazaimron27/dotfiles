@@ -1,13 +1,9 @@
 [character]
 format = '$symbol '
-success_symbol = '[➜](green)'
-error_symbol = '[➜](red)'
-
-[cmd_duration]
-min_time = 500
-format = 'took [$duration](bold yellow)'
-show_notifications = true
-min_time_to_notify = 30000
+# success_symbol = '[➜](green)'
+# error_symbol = '[➜](red)'
+success_symbol = '[✦](green)'
+error_symbol = '[✦](red)'
 
 [aws]
 symbol = "  "
