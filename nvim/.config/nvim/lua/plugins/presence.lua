@@ -4,7 +4,7 @@ return {
     enabled = true,
     log_level = vim.log.levels.OFF,
     editor = {
-      client = "neovim",
+      client = "lazyvim",
       tooltip = "The Superior Text Editor",
       icon = nil,
     },
