@@ -71,8 +71,8 @@ set -gx ATUIN_NOBIND true
 atuin init fish | source
 
 # bind to ctrl-r in normal and insert mode, add any other bindings you want here too
-bind \cq _atuin_search
-bind -M insert \cq _atuin_search
+bind \ct _atuin_search
+bind -M insert \ct _atuin_search
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
@@ -89,7 +89,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/faza/.ghcup/bin # ghcup-env
 
-set -g Z_CMD "j"
+set -g Z_CMD j
 
 # test -f ~/.inshellisense/fish/init.fish && source ~/.inshellisense/fish/init.fish
 
@@ -106,10 +106,10 @@ function ffind
 end
 
 function y
-	set tmp (mktemp -t "yazi-cwd.XXXXXX")
-	yazi $argv --cwd-file="$tmp"
-	if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-		builtin cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
