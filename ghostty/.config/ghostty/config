@@ -1,0 +1,105 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /home/faza/.config/ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+
+font-family = "JetBrainsMono NF"
+
+# font-family = "CaskaydiaCove NF"
+
+# font-style = "Regular"
+# font-style-bold = "Bold"
+# font-style-italic = "Regular"
+# font-style-bold-italic = "Bold"
+
+font-size = 12
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+
+# theme = Monokai Pro Octagon
+
+palette = 0=#75715E
+palette = 1=#F92672
+palette = 2=#A6E22E
+palette = 3=#F4BF75
+palette = 4=#66D9EF
+palette = 5=#AE81FF
+palette = 6=#2AA198
+palette = 7=#F9F8F5
+palette = 8=#272822
+palette = 9=#F92672
+palette = 10=#A6E22E
+palette = 11=#F4BF75
+palette = 12=#66D9EF
+palette = 13=#AE81FF
+palette = 14=#2AA198
+palette = 15=#F8F8F2
+background = #272822
+
+# One Dark Pro
+# background = #282c34
+
+# Monokai Pro Machine
+background = #273136
+
+# Monokai Pro Spectrum
+background = #222222
+
+foreground = #F8F8F2
+cursor-color = #ffffff
+cursor-text = #c6d0f5
+selection-background = #626880
+selection-foreground = #c6d0f5
+
+background-opacity = 0.95
+
+shell-integration = fish
+shell-integration-features = no-cursor, sudo
+
+maximize = true
+window-decoration = false
+window-padding-x = 10
+window-padding-y = 10
+
+adjust-cell-height = 20%
+
+# keybindings
+keybind = cmd+k>r=reload_config
+
+keybind = cmd+k>c=new_tab
