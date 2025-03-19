@@ -254,7 +254,7 @@
   "prisma.showPrismaDataPlatformNotification": false,
   "redhat.telemetry.enabled": false,
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.fontFamily": "Fira Code, '0xProto Nerd Font'",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   // "terminal.integrated.fontLigatures": true,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1.2,
