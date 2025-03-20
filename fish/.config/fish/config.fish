@@ -43,6 +43,7 @@ alias sysinfo=fastfetch
 alias cat=bat
 #alias ls="eza --icons" -s
 alias please=sudo
+alias astronvim="NVIM_APPNAME=astronvim nvim"
 # alias end
 
 # abbr
