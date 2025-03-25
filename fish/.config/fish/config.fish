@@ -114,3 +114,6 @@ function y
     end
     rm -f -- "$tmp"
 end
+
+# set -x NIX_CONFIG "experimental-features = nix-command flakes ca-derivations"
+devbox global shellenv --init-hook | source
