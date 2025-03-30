@@ -117,3 +117,4 @@ end
 
 # set -x NIX_CONFIG "experimental-features = nix-command flakes ca-derivations"
 devbox global shellenv --init-hook | source
+set -U devbox_no_prompt true

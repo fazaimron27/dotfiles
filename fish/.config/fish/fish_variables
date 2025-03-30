@@ -20,6 +20,7 @@ SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_f
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1epatrickf1/fzf\x2efish\x1ejethrokuan/z\x1ejgantunes/fish\x2dgvm\x1eedc/bass\x1ejorgebucaran/autopair\x2efish\x1ewfxr/forgit\x1emeaningful\x2dooo/sponge
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2efish
+SETUVAR devbox_no_prompt:true
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
