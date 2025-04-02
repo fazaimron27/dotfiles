@@ -1,18 +1,18 @@
 [general]
-import = [
-    "~/.config/alacritty/themes/themes/monokai.toml"
-]
+import = ["~/.config/alacritty/themes/themes/monokai.toml"]
 
 [window]
-opacity = 0.9
-padding.x = 5
-padding.y = 5
+opacity = 0.95
+padding.x = 10
+padding.y = 10
 decorations = "None"
 startup_mode = "Maximized"
 
 [font]
-normal = { family = "Fira Code", style = "Regular" }
-size = 11
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+size = 12
+offset = { x = 0, y = 7 }
+glyph_offset = { x = 0, y = 7 }
 
 [cursor]
 style = { shape = "Block", blinking = "Always" }
