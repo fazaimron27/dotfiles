@@ -19,3 +19,6 @@ style = { shape = "Block", blinking = "Always" }
 
 [terminal]
 shell = "fish"
+
+[colors.primary]
+background = "#222222"
