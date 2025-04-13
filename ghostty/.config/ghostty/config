@@ -54,32 +54,32 @@ font-size = 12
 
 # theme = Monokai Pro Octagon
 
-palette = 0=#75715E
-palette = 1=#F92672
-palette = 2=#A6E22E
-palette = 3=#F4BF75
-palette = 4=#66D9EF
-palette = 5=#AE81FF
-palette = 6=#2AA198
-palette = 7=#F9F8F5
-palette = 8=#272822
-palette = 9=#F92672
-palette = 10=#A6E22E
-palette = 11=#F4BF75
-palette = 12=#66D9EF
-palette = 13=#AE81FF
-palette = 14=#2AA198
-palette = 15=#F8F8F2
+# palette = 0=#75715E
+# palette = 1=#F92672
+# palette = 2=#A6E22E
+# palette = 3=#F4BF75
+# palette = 4=#66D9EF
+# palette = 5=#AE81FF
+# palette = 6=#2AA198
+# palette = 7=#F9F8F5
+# palette = 8=#272822
+# palette = 9=#F92672
+# palette = 10=#A6E22E
+# palette = 11=#F4BF75
+# palette = 12=#66D9EF
+# palette = 13=#AE81FF
+# palette = 14=#2AA198
+# palette = 15=#F8F8F2
 # background = #272822
 
 # One Dark Pro
 # background = #282c34
 
 # Monokai Pro Machine
-background = #273136
+# background = #273136
 
 # Monokai Pro Spectrum
-background = #222222
+# background = #222222
 
 foreground = #F8F8F2
 cursor-color = #ffffff
@@ -103,3 +103,25 @@ adjust-cell-height = 20%
 keybind = cmd+k>r=reload_config
 
 keybind = cmd+k>c=new_tab
+
+palette = 0=#282c34
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#61afef
+palette = 5=#c678dd
+palette = 6=#56b6c2
+palette = 7=#abb2bf
+palette = 8=#5c6370
+palette = 9=#e9969d
+palette = 10=#b3d39c
+palette = 11=#edd4a6
+palette = 12=#8fc6f4
+palette = 13=#d7a1e7
+palette = 14=#7bc6d0
+palette = 15=#c8cdd5
+background = #282c34
+foreground = #abb2bf
+cursor-color = #c678dd
+selection-background = #c678dd
+selection-foreground = #abb2bf
