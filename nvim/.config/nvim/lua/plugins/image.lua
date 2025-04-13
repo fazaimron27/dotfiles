@@ -1,10 +1,9 @@
 return {
   "3rd/image.nvim",
-  build = false,
   event = "VeryLazy",
   opts = {
     backend = "kitty",
-    processor = "magick_cli",
+    processor = "magick_rock",
     integrations = {
       markdown = {
         enabled = true,
