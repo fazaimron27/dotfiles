@@ -21,7 +21,7 @@ return {
         functions = "italic",
         operators = "NONE",
         variables = "NONE",
-        parameters = "NONE",
+        parameters = "italic",
         conditionals = "italic",
         virtual_text = "NONE",
       },
