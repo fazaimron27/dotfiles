@@ -41,7 +41,7 @@ alias reiniciar="sudo reboot now"
 alias ff=fastfetch
 alias sysinfo=fastfetch
 alias cat=bat
-#alias ls="eza --icons" -s
+# alias ls="eza --all --icons" -s
 alias please=sudo
 alias astronvim="NVIM_APPNAME=astronvim nvim"
 # alias end
