@@ -29,7 +29,7 @@ return {
         cursorline = true,
         transparency = true,
         terminal_colors = true,
-        highlight_inactive_windows = false,
+        highlight_inactive_windows = true,
       },
     },
   },
