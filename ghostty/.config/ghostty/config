@@ -29,7 +29,7 @@ font-family = "JetBrainsMono NF"
 # font-style-italic = "Regular"
 # font-style-bold-italic = "Bold"
 
-font-size = 11
+font-size = 10
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -94,7 +94,7 @@ shell-integration-features = no-cursor, sudo
 
 title = " "
 # maximize = true
-window-height = 37
+window-height = 43
 window-width = 155
 window-decoration = auto
 window-padding-x = 10
