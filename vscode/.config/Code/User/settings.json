@@ -262,7 +262,7 @@
   "window.menuBarVisibility": "compact",
   "window.title": "",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
+  // "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "activityBar.background": "#282c34",
     "editorGroupHeader.tabsBackground": "#282c34",
