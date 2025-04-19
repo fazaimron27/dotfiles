@@ -5,8 +5,8 @@ return {
       init = function()
         -- Require providers
         require("hover.providers.lsp")
-        -- require('hover.providers.gh')
-        -- require('hover.providers.gh_user')
+        require("hover.providers.gh")
+        require("hover.providers.gh_user")
         -- require('hover.providers.jira')
         -- require('hover.providers.dap')
         -- require('hover.providers.fold_preview')
