@@ -87,7 +87,7 @@ cursor-text = #c6d0f5
 selection-background = #626880
 selection-foreground = #c6d0f5
 
-background-opacity = 0.95
+background-opacity = 0.90
 
 shell-integration = fish
 shell-integration-features = no-cursor, sudo
