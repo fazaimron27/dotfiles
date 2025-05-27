@@ -44,6 +44,8 @@ alias cat=bat
 # alias ls="eza --all --icons" -s
 alias please=sudo
 alias astronvim="NVIM_APPNAME=astronvim nvim"
+alias nvchad="NVIM_APPNAME=nvchad nvim"
+alias speedy=".cli/speedtest"
 # alias end
 
 # abbr
