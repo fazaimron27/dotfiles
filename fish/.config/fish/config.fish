@@ -43,6 +43,7 @@ alias sysinfo=fastfetch
 alias cat=bat
 # alias ls="eza --all --icons" -s
 alias please=sudo
+alias dotf="z .dotfiles/"
 alias astronvim="NVIM_APPNAME=astronvim nvim"
 alias nvchad="NVIM_APPNAME=nvchad nvim"
 alias speedy=".cli/speedtest"
@@ -81,6 +82,9 @@ bind -M insert \ct _atuin_search
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+# laravel
+set -gx PATH $PATH ~/.config/composer/vendor/bin
+
 #set -x RUBYGEMS /usr/local/share/gems
 #set -x PATH $PATH $RUBYGEMS/gems
 
@@ -116,6 +120,27 @@ function y
     end
     rm -f -- "$tmp"
 end
+
+function bmark --description "Run bmark from anywhere"
+    set -l bmark_dir /home/faza/Documents/sites/dojo/bmark
+
+    if not test -d $bmark_dir
+        echo "Directory not found: $bmark_dir"
+        return 1
+    end
+
+    pushd $bmark_dir > /dev/null; or return 1
+
+    if test (count $argv) -eq 0
+        mix bmark help
+    else
+        mix bmark $argv
+    end
+
+    popd > /dev/null
+end
+
+alias bm=bmark
 
 # set -x NIX_CONFIG "experimental-features = nix-command flakes ca-derivations"
 devbox global shellenv --init-hook | source
