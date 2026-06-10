@@ -1,0 +1,5 @@
+# Use the remote GitHub EJS script to solve YouTube's JavaScript/n-challenges
+--remote-components ejs:github
+
+# Automatically extract and send cookies from Firefox to authenticate/bypass bot blocks
+--cookies-from-browser firefox
