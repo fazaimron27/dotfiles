@@ -87,15 +87,13 @@ cursor-text = #c6d0f5
 selection-background = #626880
 selection-foreground = #c6d0f5
 
-background-opacity = 0.90
+background-opacity = 0.75
 
 shell-integration = fish
 shell-integration-features = no-cursor, sudo
 
 title = " "
-# maximize = true
-window-height = 43
-window-width = 155
+maximize = true
 window-decoration = auto
 window-padding-x = 10
 window-padding-y = 10
