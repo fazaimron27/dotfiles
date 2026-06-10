@@ -5,14 +5,14 @@ return {
     log_level = vim.log.levels.OFF,
     editor = {
       client = "lazyvim",
-      tooltip = "The Superior Text Editor",
+      tooltip = "Powered by caffeine and bad decisions",
       icon = nil,
     },
     display = {
-      theme = "default",
+      theme = "void",
       flavor = "dark",
       swap_fields = false,
-      swap_icons = false,
+      swap_icons = true,
     },
     timestamp = {
       enabled = true,
@@ -33,56 +33,72 @@ return {
     },
     text = {
       workspace = function(opts)
-        return "In " .. opts.workspace
+        return "Nyasar di " .. opts.workspace
       end,
+
       viewing = function(opts)
-        return "Viewing " .. opts.filename
+        return "Mengintip " .. opts.filename
       end,
+
       editing = function(opts)
-        return "Editing " .. opts.filename
+        return "Bergulat dengan " .. opts.filename
       end,
+
       file_browser = function(opts)
-        return "Browsing files in " .. opts.name
+        return "Mengobrak-abrik " .. opts.name
       end,
+
       plugin_manager = function(opts)
-        return "Managing plugins in " .. opts.name
+        return "Menambah masalah dari " .. opts.name
       end,
+
       lsp = function(opts)
-        return "Configuring LSP in " .. opts.name
+        return "Berdebat dengan LSP di " .. opts.name
       end,
+
       docs = function(opts)
-        return "Reading " .. opts.name
+        return "Berpura-pura paham " .. opts.name
       end,
+
       vcs = function(opts)
-        return "Committing changes in " .. opts.name
+        return "Mengirim doa ke git lewat " .. opts.name
       end,
+
       notes = function(opts)
-        return "Taking notes in " .. opts.name
+        return "Menimbun ide di " .. opts.name
       end,
+
       debug = function(opts)
-        return "Debugging in " .. opts.name
+        return "Berburu bug di " .. opts.name
       end,
+
       test = function(opts)
-        return "Testing in " .. opts.name
+        return "Menguji kesabaran lewat " .. opts.name
       end,
+
       diagnostics = function(opts)
-        return "Fixing problems in " .. opts.name
+        return "Mencari sumber masalah di " .. opts.name
       end,
+
       games = function(opts)
-        return "Playing " .. opts.name
+        return "Kabur dari realita lewat " .. opts.name
       end,
+
       terminal = function(opts)
-        return "Running commands in " .. opts.name
+        return "Berkomunikasi dengan mesin di " .. opts.name
       end,
-      dashboard = "Home",
+
+      dashboard = "Merenungi pilihan hidup",
     },
-    buttons = nil,
-    -- buttons = {
-    --   {
-    --     label = 'View Repository',
-    --     url = function(opts) return opts.repo_url end,
-    --   },
-    -- },
+    -- buttons = nil,
+    buttons = {
+      {
+        label = "Lihat TKP",
+        url = function(opts)
+          return opts.repo_url
+        end,
+      },
+    },
     assets = nil,
     variables = nil,
     hooks = {
