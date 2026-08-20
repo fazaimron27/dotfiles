@@ -88,6 +88,7 @@ selection-background = #626880
 selection-foreground = #c6d0f5
 
 background-opacity = 0.75
+background-blur = false
 
 shell-integration = fish
 shell-integration-features = no-cursor, sudo
@@ -126,3 +127,5 @@ foreground = #abb2bf
 cursor-color = #c678dd
 selection-background = #c678dd
 selection-foreground = #abb2bf
+
+resize-overlay = never
