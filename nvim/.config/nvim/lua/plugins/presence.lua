@@ -26,7 +26,7 @@ return {
       ignore_focus = true,
       unidle_on_focus = true,
       smart_idle = true,
-      details = "Idling",
+      details = "Lari dari masalah",
       state = nil,
       tooltip = "💤",
       icon = nil,
@@ -93,7 +93,7 @@ return {
     -- buttons = nil,
     buttons = {
       {
-        label = "Lihat TKP",
+        label = "Kunjungi TKP",
         url = function(opts)
           return opts.repo_url
         end,

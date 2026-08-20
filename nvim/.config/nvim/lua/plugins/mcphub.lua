@@ -6,21 +6,20 @@ return {
   build = "npm install -g mcp-hub@latest", -- Installs `mcp-hub` node binary globally
   config = function()
     require("mcphub").setup({
-
-      extensions = {
-        copilotchat = {
-          enabled = true,
-          convert_tools_to_functions = true, -- Convert MCP tools to CopilotChat functions
-          convert_resources_to_functions = true, -- Convert MCP resources to CopilotChat functions
-          add_mcp_prefix = false, -- Add "mcp_" prefix to function names
-        },
-      },
       --- `mcp-hub` binary related options-------------------
       config = vim.fn.expand("~/.config/mcphub/servers.json"), -- Absolute path to MCP Servers config file (will create if not exists)
       port = 37373, -- The port `mcp-hub` server listens to
-      shutdown_delay = 60 * 10 * 000, -- Delay in ms before shutting down the server when last instance closes (default: 10 minutes)
+      shutdown_delay = 5 * 60 * 000, -- Delay in ms before shutting down the server when last instance closes (default: 5 minutes)
       use_bundled_binary = false, -- Use local `mcp-hub` binary (set this to true when using build = "bundled_build.lua")
       mcp_request_timeout = 60000, --Max time allowed for a MCP tool or resource to execute in milliseconds, set longer for long running tasks
+      global_env = {}, -- Global environment variables available to all MCP servers (can be a table or a function returning a table)
+      workspace = {
+        enabled = true, -- Enable project-local configuration files
+        look_for = { ".mcphub/servers.json" }, -- Files to look for when detecting project boundaries (VS Code format supported)
+        reload_on_dir_changed = true, -- Automatically switch hubs on DirChanged event
+        port_range = { min = 40000, max = 41000 }, -- Port range for generating unique workspace ports
+        get_port = nil, -- Optional function returning custom port number. Called when generating ports to allow custom port assignment logic
+      },
 
       ---Chat-plugin related options-----------------
       auto_approve = false, -- Auto approve mcp tool calls
@@ -29,10 +28,39 @@ return {
         avante = {
           make_slash_commands = true, -- make /slash commands from MCP server prompts
         },
+        copilotchat = {
+          enabled = true,
+          convert_tools_to_functions = true, -- Convert MCP tools to CopilotChat functions
+          convert_resources_to_functions = true, -- Convert MCP resources to CopilotChat functions
+          add_mcp_prefix = false, -- Add "mcp_" prefix to function names
+        },
       },
 
       --- Plugin specific options-------------------
       native_servers = {}, -- add your custom lua native servers here
+      builtin_tools = {
+        edit_file = {
+          parser = {
+            track_issues = true,
+            extract_inline_content = true,
+          },
+          locator = {
+            fuzzy_threshold = 0.8,
+            enable_fuzzy_matching = true,
+          },
+          ui = {
+            go_to_origin_on_complete = true,
+            keybindings = {
+              accept = ".",
+              reject = ",",
+              next = "n",
+              prev = "p",
+              accept_all = "ga",
+              reject_all = "gr",
+            },
+          },
+        },
+      },
       ui = {
         window = {
           width = 0.8, -- 0-1 (ratio); "50%" (percentage); 50 (raw number)
@@ -46,6 +74,7 @@ return {
           winhl = "Normal:MCPHubNormal,FloatBorder:MCPHubBorder",
         },
       },
+      json_decode = nil, -- Custom JSON parser function (e.g., require('json5').parse for JSON5 support)
       on_ready = function(hub)
         -- Called when hub is ready
       end,
